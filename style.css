@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+/* LOADER */
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  margin-left: 10%;
+  transform: translate3d(-50%, -50%, 0);
+  display: none;
+}
+.dot {
+  width: 24px;
+  height: 24px;
+  background: #3ac;
+  border-radius: 100%;
+  display: inline-block;
+  animation: slide 1s infinite;
+}
+.dot:nth-child(1) {
+  animation-delay: 0.1s;
+  background: #32aacc;
+}
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+  background: #64aacc;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.3s;
+  background: #96aacc;
+}
+.dot:nth-child(4) {
+  animation-delay: 0.4s;
+  background: #c8aacc;
+}
+.dot:nth-child(5) {
+  animation-delay: 0.5s;
+  background: #faaacc;
+}
+@-moz-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Sec-2 */
+.sec-2 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: -webkit-center;
+}
+.grid-box {
+  border: 1px solid White;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.box-row-1,
+.box-row-2,
+.box-row-3 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+.borders {
+  border-top: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  width: 190px;
+  height: 170px;
+}
+.borders h1 {
+  margin-top: 50px;
+  font-size: 60px;
+  color: blue;
+}
+
+@media (max-width: 746px) {
+  .grid-box {
+    width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .grid-box {
+    width: 100%;
+  }
+}
